@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+
 // define the trip schema
 const tripSchema = new mongoose.Schema({
  code: {type: String, required: true, index: true },
@@ -10,4 +11,4 @@ const tripSchema = new mongoose.Schema({
  image: {type: String, required: true},
  description: {type: String, required: true}
 });
-mongoose.model('trips', tripSchema);
+mongoose.model('trips', tripSchema, 'trips');
