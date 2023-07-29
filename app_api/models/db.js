@@ -55,6 +55,7 @@ process.on('SIGTERM', () => {
     }); 
 });
 
+connect();
 
 //bring in the travel shema
 require('./travel')
