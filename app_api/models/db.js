@@ -57,5 +57,8 @@ process.on('SIGTERM', () => {
 
 connect();
 
-//bring in the travel shema
+//bring in the travel schema
 require('./travel')
+
+// bring in the user schema
+require('./user');
